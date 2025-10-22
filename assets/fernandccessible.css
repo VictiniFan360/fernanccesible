@@ -1,0 +1,55 @@
+/* Estilos básicos para el menú de accesibilidad */
+#accessibility {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 99999;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  /* El JS que tengas puede sobrescribirlo; aquí estilos mínimos */
+}
+
+#accessibility .fernand-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 8px;
+  background: #0b5fff;
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(11, 95, 255, .18);
+  cursor: pointer;
+  user-select: none;
+}
+
+#accessibility .fernand-panel {
+  margin-top: 8px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,.08);
+  padding: 12px;
+  min-width: 240px;
+}
+
+/* Estilos básicos FernandCcesible */
+.own-icon img {
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,.25);
+  transition: transform .3s ease;
+}
+
+.own-icon:hover img {
+  transform: scale(1.05);
+}
+
+/* Menú flotante */
+#own-menu {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0,0,0,.15);
+  padding: 1rem;
+  z-index: 1001;
+}
