@@ -1,4 +1,4 @@
-/* Estilos funcionales de accesibilidad */
+/* Estilos de accesibilidad funcional */
 html.fc-contrast {
   filter: invert(1) hue-rotate(180deg);
   background-color: #000 !important;
@@ -7,6 +7,6 @@ html.fc-contrast {
 html.fc-desaturated {
   filter: grayscale(100%) !important;
 }
-.own-btn-primary { background-color: #0073aa; color: #fff; }
-.own-btn-secondary { background-color: #555; color: #fff; }
+.own-btn-primary { background-color: #0073aa; color: #fff; border:none; padding:6px 10px; border-radius:6px; cursor:pointer; }
+.own-btn-secondary { background-color: #555; color: #fff; border:none; padding:6px 10px; border-radius:6px; cursor:pointer; }
 .own-btn:hover { opacity: 0.9; }
