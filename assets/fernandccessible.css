@@ -1,12 +1,41 @@
-/* Estilos de accesibilidad funcional */
-html.fc-contrast {
+.own-btn-primary, .own-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.own-btn-primary {
+  background-color: #0073aa;
+  color: white;
+}
+.own-btn-secondary {
+  background-color: #ccc;
+  color: #000;
+}
+.own-btn-primary i, .own-btn-secondary i {
+  margin-right: 4px;
+}
+
+.fernand-contrast {
   filter: invert(1) hue-rotate(180deg);
-  background-color: #000 !important;
-  color: #fff !important;
 }
-html.fc-desaturated {
-  filter: grayscale(100%) !important;
+
+.fernand-desaturate {
+  filter: grayscale(100%);
 }
-.own-btn-primary { background-color: #0073aa; color: #fff; border:none; padding:6px 10px; border-radius:6px; cursor:pointer; }
-.own-btn-secondary { background-color: #555; color: #fff; border:none; padding:6px 10px; border-radius:6px; cursor:pointer; }
-.own-btn:hover { opacity: 0.9; }
+
+.fernand-protanopia {
+  filter: url('#protanopia');
+}
+
+.fernand-deuteranopia {
+  filter: url('#deuteranopia');
+}
+
+.fernand-tritanopia {
+  filter: url('#tritanopia');
+}
